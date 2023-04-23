@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Signika&family=Ubuntu&display=swap');
+
+
+
+.navbar-expand-md{
+    background: #C33764;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.navbar-brand{
+    color:white;
+    font-family:'Pacifico', cursive ;
+    font-size: 1.5rem
+    
+}
+
+
+
+

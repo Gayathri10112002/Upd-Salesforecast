@@ -1,0 +1,14 @@
+.navbar {
+    background-color:white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    
+    
+}
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(to right, #1D2671, #C33764);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: larger;
+}
+

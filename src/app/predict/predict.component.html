@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" />
+<div class="abc">
+<main role="main" class="container mt-5">
+  
+  <form  (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+    <div class="container">
+      <div class="frame">
+        <div class="center">
+          <div class="title">
+            <h4 class="title-head">Sales Prediction</h4>
+          </div>
+          <div class="upload-container">
+      <label for="csvFile" class="abcd">Upload File</label>
+      <input type="file" accept=".csv" class="csv-upload" id="csvFile"  (change)="onFileSelected($event)" #csvFileInput>
+    </div>
+
+    <div class="select">
+    <label for="periodicity" class="abcd">Select periodicity:</label>
+      <select name="periodicity" id="periodicity"class="asdfg" (change)="onPeriodicityChange($event)">
+        <option value="D">Days</option>
+        <option value="W">Weeks</option>
+        <option value="M">Months</option>
+        <option value="Y">Years</option>
+      </select>
+    </div>
+    <br>
+  
+      <label for="periods" class="text">Enter number of periods:</label>
+      <input type="number" class="num" name="periods" id="periods" (change)="onPeriodsChange($event)"><br><br>
+  
+      <div class="cont">  
+      <input type="submit" class="btn" value=" Predict">
+
+    </div>
+  </div>
+</div>
+</div>
+</form> 
+  <div  *ngIf="csvData.length > 0">
+    <table>
+      <thead>
+        <tr>
+          <th *ngFor="let header of csvData[0]">{{ header }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of csvData.slice(1)">
+          <td *ngFor="let value of row">{{ value }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
