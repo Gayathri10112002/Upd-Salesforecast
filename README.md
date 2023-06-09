@@ -35,7 +35,8 @@ Angular is cross-platform, fast, scalable, has incredible tooling, and is loved 
 
 ### Output video
 
-<iframe src="https://player.vimeo.com/video/834649424?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1918" height="976" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="sales"></iframe>
+[![Video Label](VIDEO_ID)](https://vimeo.com/834649424?share=copy)
+
 
 
 
